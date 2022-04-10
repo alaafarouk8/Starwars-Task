@@ -1,5 +1,5 @@
 # Starwars-Task
-create a flask app that exposes API which takes the name of a character as input and returns the following:
+a flask app that exposes API which takes the name of a character as input and returns the following:
 - full name of the character
 - gender
 - species name 
