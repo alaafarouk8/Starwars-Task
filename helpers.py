@@ -40,10 +40,10 @@ def get_species(species_url):
 
 @timer
 def getAllDetails(character):
-    """Function to all details for the character"""
+    """Function to get all details for the character"""
     charRes = requests.get(f'{SWAPI_BASE}people/?search={character}').json()
     if charRes['count'] == 0:
-        return {'MessageError': 'Sorry, This Character Not Found '}
+        return {'MessageError': ' Not Found '}
     data = charRes['results']
     results = []
     for char in data:
